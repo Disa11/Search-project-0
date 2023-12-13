@@ -1,0 +1,117 @@
+
+
+body {
+  font-size: 40.5%;
+  background: linear-gradient(270deg, #5b3bdb, #907ae8, #9286c5, #c7bcf7, #c7bcf7, #7f67e4, #ac9fe1);
+  background-size: 1400% 1400%;
+  -o-animation: back-gradient 30s ease infinite;
+  animation: back-gradient 30s ease infinite;
+}
+
+@-o-keyframes back-gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes back-gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@media (max-width: 900px) {
+  .sidebar {
+    background-color: rgba(167, 94, 250, 0.438) !important;
+    backdrop-filter: blur(10px);
+  }
+}
+
+
+.R_L_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10% 0%;
+}
+@media (max-width: 600px) {
+  .R_L_container {
+    margin: 15% 2%;
+  }
+}
+@media (max-width: 300px) {
+  .R_L_container {
+    margin: 20% 3%;
+  }
+}
+@media screen and (max-width: 420px) {
+  .R_L_container {
+    margin-bottom: 75% !important;
+    margin-top: 10%;
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+}
+.R_L_container-book {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10% 0%;
+}
+
+.knauth_search {
+  border: 2px solid rgba(255, 255, 255, 0.35);
+  display: inline;
+  flex-wrap: wrap;
+  justify-content: center;
+  background: transparent;
+  backdrop-filter: blur(30px);
+  height: 80px;
+  border-radius: 40px;
+  width: 70%;
+  padding: 0 2%;
+}
+.knauth_search .knauth_search_text {
+  border: none !important;
+  outline: none !important;
+  height: 80px;
+  border-radius: 40px;
+  background: none;
+  color: white;
+  font-size: 20px;
+  line-height: 60%;
+  width: 90% !important;
+}
+.knauth_search input::placeholder {
+  color: #fff;
+}
+.knauth_search .knauth_search_button {
+  background: transparent;
+  border: none;
+  overflow: hidden;
+  width: 40px;
+  height: 40px;
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+}
+@media screen and (max-width: 700px) {
+  .knauth_search .knauth_search_text {
+    width: 80% !important;
+  }
+}
+@media screen and (max-width: 370px) {
+  .knauth_search .knauth_search_text {
+    width: 70% !important;
+  }
+}
